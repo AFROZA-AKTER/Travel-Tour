@@ -1,0 +1,42 @@
+.booking {
+    background-color: #36bca1;
+    position: absolute;
+    top: 40px;
+    padding: 10px;
+    right: 0px;
+    font-size: 16px;
+    background: var(--link-color, #F97150);
+    font-weight: 600;
+    margin-right: 0px !important;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: 1px;
+    color: #ffffff;
+  }
+  .card{
+    background: #fff;
+    box-shadow: 0 8px 30px -7px #c9dff0;
+  }
+
+  /* .booking .detail-grid {
+    background-color: #36bca1;
+    position: absolute;
+    width: 90%;
+    top: 260px;
+    padding: 6px 8px;
+    font-size: 12px;
+    background: var(--link-color, #5191FA);
+    font-weight: 600;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: 1px;
+    color: #ffffff;
+  } */
+
+ /*  .card img {
+    height: 48% !important;
+  } */
