@@ -9,7 +9,7 @@ const Reviews = () => {
             <div class="row row-cols-1 row-cols-md-3 g-4 m-5 ">
                 <div class="col">
                     <div class="card h-100">
-                        <img src="http://html.bdiakcml8h-e92498n216kr.p.runcloud.link/wunderlust/assets/images/uploads/testi/review1.png" class="card-img-top" alt="..." />
+                        <img src="https://i.ibb.co/hDVFRMh/review1.png" class="card-img-top" alt="..." />
                         <div class="card-body text-center">
                             <h5 class="card-title">HANET AGUILAR</h5>
                             <p class="card-text">Cras eget mattis neque. Nulla tempus tortus elit, vitae phaetr sit amet, consectetur adipisicing elit. </p>
@@ -18,7 +18,7 @@ const Reviews = () => {
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <img src="http://html.bdiakcml8h-e92498n216kr.p.runcloud.link/wunderlust/assets/images/uploads/testi/review2.png" class="card-img-top" alt="..." />
+                        <img src="https://i.ibb.co/NVcvNQk/review2.png" class="card-img-top" alt="..." />
                         <div class="card-body text-center">
                             <h5 class="card-title">BEVERLY WEST</h5>
                             <p class="card-text">Services are awesome.tempus tortus elit, vitae phaetr sit amet, consectetur adipisicing elit.</p>
@@ -27,7 +27,7 @@ const Reviews = () => {
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <img src="http://html.bdiakcml8h-e92498n216kr.p.runcloud.link/wunderlust/assets/images/uploads/testi/review3.png" class="card-img-top" alt="..." />
+                        <img src="https://i.ibb.co/xjqM4HM/review3.png" class="card-img-top" alt="..." />
                         <div class="card-body text-center">
                             <h5 class="card-title">ROGER OBRIEN</h5>
                             <p class="card-text">Great experience . this is just amazing. really satisfying.</p>

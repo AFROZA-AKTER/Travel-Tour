@@ -26,9 +26,9 @@ const Header = () => {
             {
               user.email ?
                 <div>
-                  <Nav.Link onClick={logOut} className="text-primary fw-bold mx-3">LOGOUT</Nav.Link>
-                  <Nav.Link className="text-primary fw-bold mx-3" as={HashLink} to="/dashboard">DASHBOARD</Nav.Link>
-                  <Navbar.Text className="text-primary fw-bold mx-4">
+                  <Nav.Link onClick={logOut} className="text-info fw-bold mx-3">LOGOUT</Nav.Link>
+                  <Nav.Link className="text-info fw-bold mx-3" as={Link} to="/dashboard">DASHBOARD</Nav.Link>
+                  <Navbar.Text className="text-info fw-bold mx-4">
                     Signed in as: <a href="#login" style={{ color: "#F97150" }}>{user.displayName}</a>
                   </Navbar.Text>
                 </div>
