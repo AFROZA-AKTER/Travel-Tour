@@ -13,7 +13,7 @@ const MyOrders = () => {
     const email = user.email;
 
     useEffect(() => {
-        fetch(`http://localhost:5000/myOrders/${email}`)
+        fetch(` https://glacial-tundra-74344.herokuapp.com/myOrders/${email}`)
             .then(res => res.json())
             .then(data => {
                 setServices(data)
@@ -21,7 +21,7 @@ const MyOrders = () => {
     }, [control])
 
     const handleDelete = id =>{
-        fetch(`http://localhost:5000/cancelOrder/${id}` , {
+        fetch(` https://glacial-tundra-74344.herokuapp.com/cancelOrder/${id}` , {
             method: "DELETE" ,
         })
         .then(res => res.json())

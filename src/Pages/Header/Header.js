@@ -32,7 +32,6 @@ const Header = () => {
                     Signed in as: <a href="#login" style={{ color: "#F97150" }}>{user.displayName}</a>
                   </Navbar.Text>
                 </div>
-
                 :
                 <div>
                   <Nav.Link style={{ fontWeight: '500' }} className="text-info" as={Link} to="/login">LOGIN</Nav.Link>

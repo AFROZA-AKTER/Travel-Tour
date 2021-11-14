@@ -15,7 +15,7 @@ const ManageOrders = () => {
 
     /* const { register, handleSubmit } = useForm();
     const handleUpdate = id => {
-        fetch(`http://localhost:5000/updateStatus/${id}`, {
+        fetch(` https://glacial-tundra-74344.herokuapp.com/updateStatus/${id}`, {
             method: "PUT",
             headers: { "content-type": "application/json" },
             body: JSON.stringify({status})
@@ -33,13 +33,13 @@ const ManageOrders = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/allOrders')
+        fetch(' https://glacial-tundra-74344.herokuapp.com/allOrders')
             .then(res => res.json())
             .then(data => setOrders(data))
     }, [])
 
     const handleDelete = id => {
-        fetch(`http://localhost:5000/cancelOrder/${id}`, {
+        fetch(` https://glacial-tundra-74344.herokuapp.com/cancelOrder/${id}`, {
             method: "DELETE",
         })
             .then(res => res.json())
@@ -55,7 +55,7 @@ const ManageOrders = () => {
 
 
     const handleUpdate = id =>{
-        fetch(`http://localhost:5000/updateStatus/${id}`, {
+        fetch(` https://glacial-tundra-74344.herokuapp.com/updateStatus/${id}`, {
             method: "PUT",
             headers: { "content-type": "application/json" },
             body: JSON.stringify({status})

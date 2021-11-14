@@ -14,7 +14,7 @@ const Booking = () => {
     const { user } = useAuth();
 
     useEffect(() => {
-        fetch(`http://localhost:5000/services/${serviceId}`)
+        fetch(` https://glacial-tundra-74344.herokuapp.com/services/${serviceId}`)
             .then(res => res.json())
             .then(data => setService(data))
     }, []);
@@ -24,7 +24,7 @@ const Booking = () => {
     const onSubmit = (data) => {
         data.email = user.email;
 
-        fetch('http://localhost:5000/confirmOrder', {
+        fetch(' https://glacial-tundra-74344.herokuapp.com/confirmOrder', {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),
