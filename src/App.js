@@ -13,45 +13,49 @@ import MyOrders from './Dashboard/MyOrders/MyOrders';
 import Dashboard from './Dashboard/Dashboard';
 import Register from './Pages/Register/Register';
 import PrivateRoute from './Pages/PrivateRoute/PrivateRoute'
+import AuthProvider from './Context/AuthProvider';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Header></Header>
-      <Switch>
-        <Route exact path="/" >
-          <Home />
-        </Route>
-        <Route path="/home">
-          <Home />
-        </Route>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/login" >
-          <Login />
-        </Route>
-        <Route path="/signup">
-          <Register></Register>
-        </Route>
-        <PrivateRoute path="/myOrder" >
-          <MyOrders />
-        </PrivateRoute>
-        <PrivateRoute path="/dashboard" >
-          <Dashboard />
-        </PrivateRoute>
-        <Route path="/addService">
-          <AddService></AddService>
-        </Route>
-        <PrivateRoute path="/services/:serviceId">
-          <Booking></Booking>
-        </PrivateRoute>
-        <Route path="*">
-          <NotFound></NotFound>
-        </Route>
-      </Switch>
-      <Footer></Footer>
-    </BrowserRouter>
+    <AuthProvider>
+      <BrowserRouter>
+        <Header></Header>
+        <Switch>
+          <Route exact path="/" >
+            <Home />
+          </Route>
+          <Route path="/home">
+            <Home />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/login" >
+            <Login />
+          </Route>
+          <Route path="/signup">
+            <Register></Register>
+          </Route>
+          <PrivateRoute path="/myOrder" >
+            <MyOrders />
+          </PrivateRoute>
+          <PrivateRoute path="/dashboard" >
+            <Dashboard />
+          </PrivateRoute>
+          <Route path="/addService">
+            <AddService></AddService>
+          </Route>
+          <PrivateRoute path="/services/:serviceId">
+            <Booking></Booking>
+          </PrivateRoute>
+          <Route path="*">
+            <NotFound></NotFound>
+          </Route>
+        </Switch>
+        <Footer></Footer>
+      </BrowserRouter>
+    </AuthProvider>
+
   );
 }
 
